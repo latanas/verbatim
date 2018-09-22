@@ -1,0 +1,74 @@
+{
+  "indicatif": {
+    "present": {
+      "name": "Présent",
+      "description": "Use for actions in the present."
+    },
+    "present-continue": {
+      "name": "Présent continu",
+      "description": "Use for continuous activity in the present. The emphasis is on the continuity."
+    },
+    "futur-proche": {
+      "name": "Futur proche",
+      "description": "Use for actions that are going to happen in the near future. This is commonly used in conversation."
+    },
+    "futur-simple": {
+      "name": "Futur simple",
+      "description": "Use for actions in the more distant, far-flung future."
+    },
+    "passe-compose": {
+      "name": "Passé composé",
+      "description": "Use for actions that happened in the past. The empasis is on the action."
+    },
+    "imparfait": {
+      "name": "Imparfait",
+      "description": "Use to tell about past events. This is common in modern novels, and when telling a story."
+    },
+    "pqp": {
+      "name": "Plus-que-parfait (Past Perfect)",
+      "description": "Use for actions that happened in the past, before some other past actions."
+    },
+    "passe-simple": {
+      "name": "Passé simple (Literary)",
+      "description": "Use for literary narration in the past. This tense is slowly falling out of use. Knowing it helps when reading old novels."
+    },
+    "passe-anterioir": {
+      "name": "Passé antérieur (Literary)",
+      "description": "Use for literary narration of actions in the past, that happened before other past actions."
+    },
+    "futur-anteriour": {
+      "name": "Futur antérieur (Futue in the Past)",
+      "description": "Use to express the future from the point of view of the past."
+    }
+  },
+  "conditionnel": {
+    "present": {
+      "name": "Conditionnel Present",
+      "description": "Use for possible actions in the present. Typically, this follows 'si' in the sentence."
+    },
+    "passe": {
+      "name": "Conditionnel Passe",
+      "description": "Use for actions that were possible in the past."
+    }
+  },
+  "subjonctif": {
+    "present": {
+      "name": "Subjonctif Present",
+      "description": "Use to express subjective feelings, judgements and decisions. Typically, this follows 'que' in the sentence."
+    },
+    "passe": {
+      "name": "Subjonctif Passe",
+      "description": "Use for past subjective feelings, judgements and decisions."
+    }
+  },
+  "imperatif": {
+    "present": {
+      "name": "Imperatif Present",
+      "description": "Use to give orders and boss around."
+    },
+    "passe": {
+      "name": "Imperatif Passe",
+      "description": "Use for orders given in the past."
+    }
+  }
+}
