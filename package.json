@@ -1,0 +1,16 @@
+{
+  "name": "verbatim",
+  "version": "0.0.1",
+  "description": "Verbatim conjugates verbs.",
+  "repository": "https://github.com/latanas/verbatim.git",
+  "homepage": "http://www.laskov.co.uk/verbatim/",
+  "author": "Atanas Ivaylov Laskov <latanas@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "typescript": "^3.0.3",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.0",
+    "ts-loader": "^5.1.1"
+  },
+  "private": true
+}

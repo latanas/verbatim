@@ -4,7 +4,7 @@
       "name": "Présent",
       "description": "Use for actions in the present."
     },
-    "present-continue": {
+    "present-continu": {
       "name": "Présent continu",
       "description": "Use for continuous activity in the present. The emphasis is on the continuity."
     },
@@ -32,11 +32,11 @@
       "name": "Passé simple (Literary)",
       "description": "Use for literary narration in the past. This tense is slowly falling out of use. Knowing it helps when reading old novels."
     },
-    "passe-anterioir": {
+    "passe-anterieur": {
       "name": "Passé antérieur (Literary)",
       "description": "Use for literary narration of actions in the past, that happened before other past actions."
     },
-    "futur-anteriour": {
+    "futur-anterieur": {
       "name": "Futur antérieur (Futue in the Past)",
       "description": "Use to express the future from the point of view of the past."
     }
