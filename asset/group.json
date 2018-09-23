@@ -1,22 +1,22 @@
 {
-  "group": [
-    {
-      "name": "Unknown Word",
-      "description": "This is not a known verb, but it may be a verb derivative form. Please specify the verb with the -er, -ir or -re ending."
-    },
-    {
+  "group": {
+    "er": {
       "name": "Verb of Group I",
       "description": "French verbs in this group can be recognized by the -er ending. They are the most numerous, and the easiest to conjucate."
     },
-    {
+    "ir": {
       "name": "Verb of Group II",
       "description": "French verbs in this group can be recognized by the -ir ending."
     },
-    {
+    "re": {
       "name": "Verb of Group III",
       "description": "French verbs in this group can be recognized by the -re ending. Many irregular verbs also belong to this group."
+    },
+    "unknown": {
+      "name": "Unknown Word",
+      "description": "This is not a known verb, but it may be a verb derivative form. Please specify the verb with the -er, -ir or -re ending."
     }
-  ],
+  },
   "verification": [
     "There is no record of this word in the Verbatim database. This program is useful only for the most common verbs. Please check in a dictionnary.",
     "This is a known French verb."
