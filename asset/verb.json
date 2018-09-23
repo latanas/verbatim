@@ -1,5 +1,6 @@
 {
   "parler": { "meaning": "to speak" },
   "marcher": { "meaning": "to walk" },
-  "manger": { "meaning": "to eat" }
+  "manger": { "meaning": "to eat" },
+  "partir": { "meaning": "to speak", "auxillary": "être" }
 }

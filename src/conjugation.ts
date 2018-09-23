@@ -2,25 +2,17 @@
   Project: Verbatim!
   Author:  Copyright (C) 2018, Atanas Laskov
 
-  License: BSD license, see LICENSE.md for more details.
+  License: BSD license, see LICENSE for more details.
 
   http://www.atanaslaskov.com/verbatim/
 */
 
-export class Conjugation {
+// Conjugation in all persons
+export default class Conjugation {
   je: string;
   tu: string;
   il: string;
   nous: string;
   vous: string;
   ils: string;
-}
-
-export class ConjugationTenseMap {
-  [tense: string]: Conjugation;
-}
-
-export interface ConjugationAlgorithm {
-  getVerbDetector(): RegExp;
-  conjugate( infinitive: string ): ConjugationTenseMap;
 }
