@@ -11,32 +11,35 @@
 export default class VerbGroupDetector {
   private static endings: string[] = ["er", "ir", "re"];
   private group: number = 0;
+  private root: string = "";
 
   public constructor( infinitive: string ) {
-    let g: number = 1;
-
     for( let e of VerbGroupDetector.endings ) {
       let endingRegExp = new RegExp("[a-z]*" + e + "$");
 
       if( infinitive.match(endingRegExp) ) {
-        this.group = g;
         break;
       }
-      g++;
+      this.group++;
+    }
+
+    if( this.isVerbInfinitive() ) {
+      this.root = infinitive;
+      this.root.replace( new RegExp(this.getVerbEnding() + "$"), "" );
     }
   }
 
   isVerbInfinitive(): boolean {
-    return this.group != 0;
+    return this.group < VerbGroupDetector.endings.length;
   }
 
-  getVerbGroup(): number {
-    return this.group;
+  getVerbRoot(): string {
+    return this.root;
   }
 
   getVerbEnding(): string {
     if( this.isVerbInfinitive() ) {
-      return VerbGroupDetector.endings[ this.group - 1 ];
+      return VerbGroupDetector.endings[ this.group ];
     }
     return "";
   }

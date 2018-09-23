@@ -14,10 +14,10 @@ import VerbGroupDetector from './verb_group_detector'
 export default class TensePresent implements Tense {
   public conjugate( infinitive: string ): Conjugation | undefined {
     let detector: VerbGroupDetector = new VerbGroupDetector( infinitive );
-    let root = infinitive.replace( new RegExp(detector.getVerbEnding() + "$"), "" );
+    let root = detector.getVerbRoot();
 
-    switch( detector.getVerbGroup() ) {
-      case 1:
+    switch( detector.getVerbEnding() ) {
+      case "er":
         return {
           je: root + "e",
           tu: root + "es",
@@ -27,7 +27,7 @@ export default class TensePresent implements Tense {
           ils: root + "ent",
         };
 
-      case 2:
+      case "ir":
         return {
           je: root + "is",
           tu: root + "is",
@@ -37,7 +37,7 @@ export default class TensePresent implements Tense {
           ils: root + "issent",
         };
 
-      case 3:
+      case "re":
         return {
           je: root + "s",
           tu: root + "s",

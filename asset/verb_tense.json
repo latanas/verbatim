@@ -1,74 +1,130 @@
 {
   "indicatif": {
-    "present": {
-      "name": "Présent",
-      "description": "Use for actions in the present."
+    "infinitif": {
+      "description": "Dictionary form of the verb."
     },
-    "present-continu": {
-      "name": "Présent continu",
-      "description": "Use for continuous activity in the present. The emphasis is on the continuity."
+    "présent": {
+      "description": "Use for actions in the present.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
     },
-    "futur-proche": {
-      "name": "Futur proche",
-      "description": "Use for actions that are going to happen in the near future. This is commonly used in conversation."
+    "participle passé": {
+      "description": "Use as part of compound tenses.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
     },
-    "futur-simple": {
-      "name": "Futur simple",
-      "description": "Use for actions in the more distant, far-flung future."
+    "futur proche": {
+      "description": "Use for actions that are going to happen in the near future. This is commonly used in conversation.",
+      "complex": {"auxiliary-tense": "présent", "auxiliary-verb": "aller", "main-tense": "infinitif"}
     },
-    "passe-compose": {
-      "name": "Passé composé",
-      "description": "Use for actions that happened in the past. The empasis is on the action."
+    "passé récent": {
+      "description": "Use for actions in the immediate past.",
+      "complex": {"auxiliary-tense": "présent", "auxiliary-verb": "venir", "main-tense": "infinitif"},
+      "phrase": {"before-main-verb": "de"}
+    },
+    "futur simple": {
+      "description": "Use for actions in the more distant, far-flung future.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
+    },
+    "passé composé": {
+      "description": "Use for actions that happened in the past. The empasis is on the action.",
+      "complex": {"auxiliary-tense": "présent", "auxiliary-verb": ["avoir", "être"], "main-tense": "participle passé"}
     },
     "imparfait": {
-      "name": "Imparfait",
-      "description": "Use to tell about past events. This is common in modern novels, and when telling a story."
+      "description": "Use to tell about past events. This is common in modern novels, and when telling a story.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
     },
-    "pqp": {
-      "name": "Plus-que-parfait (Past Perfect)",
-      "description": "Use for actions that happened in the past, before some other past actions."
+    "plus-que-parfait": {
+      "description": "Use for actions that happened in the past, before some other past actions.",
+      "complex": {"auxiliary-tense": "imparfait", "auxiliary-verb": ["avoir", "être"], "main-tense": "participle passé"}
     },
-    "passe-simple": {
-      "name": "Passé simple (Literary)",
-      "description": "Use for literary narration in the past. This tense is slowly falling out of use. Knowing it helps when reading old novels."
+    "passé simple": {
+      "description": "Use for literary narration in the past. This tense is slowly falling out of use. Knowing it helps when reading old novels.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
     },
-    "passe-anterieur": {
-      "name": "Passé antérieur (Literary)",
-      "description": "Use for literary narration of actions in the past, that happened before other past actions."
+    "passé antérieur": {
+      "description": "Use for literary narration of actions in the past, that happened before other past actions.",
+      "complex": {"auxiliary-tense": "passé simple", "auxiliary-verb": ["avoir", "être"], "main-tense": "participle passé"}
     },
-    "futur-anterieur": {
-      "name": "Futur antérieur (Futue in the Past)",
-      "description": "Use to express the future from the point of view of the past."
+    "futur antérieur": {
+      "description": "Use to express the future from the point of view of the past.",
+      "complex": {"auxiliary-tense": "futur simple", "auxiliary-verb": ["avoir", "être"], "main-tense": "participle passé"}
     }
   },
   "conditionnel": {
-    "present": {
-      "name": "Conditionnel Present",
-      "description": "Use for possible actions in the present. Typically, this follows 'si' in the sentence."
+    "présent": {
+      "description": "Use for possible actions in the present. Typically, this follows 'si' in the sentence.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      },
+      "phrase": {"before-pronoun": "si"}
     },
-    "passe": {
-      "name": "Conditionnel Passe",
-      "description": "Use for actions that were possible in the past."
+    "passé": {
+      "description": "Use for actions that were possible in the past.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      },
+      "phrase": {"before-pronoun": "si"}
     }
   },
   "subjonctif": {
-    "present": {
-      "name": "Subjonctif Present",
-      "description": "Use to express subjective feelings, judgements and decisions. Typically, this follows 'que' in the sentence."
+    "présent": {
+      "description": "Use to express subjective feelings, judgements and decisions. Typically, this follows 'que' in the sentence.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      },
+      "phrase": {"before-pronoun": "que"}
     },
-    "passe": {
-      "name": "Subjonctif Passe",
-      "description": "Use for past subjective feelings, judgements and decisions."
+    "passé": {
+      "description": "Use for past subjective feelings, judgements and decisions.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      },
+      "phrase": {"before-pronoun": "que"}
     }
   },
   "imperatif": {
-    "present": {
-      "name": "Imperatif Present",
-      "description": "Use to give orders and boss around."
+    "présent": {
+      "description": "Use to give orders and boss around.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
     },
-    "passe": {
-      "name": "Imperatif Passe",
-      "description": "Use for orders given in the past."
+    "passé": {
+      "description": "Use for orders given in the past.",
+      "conjugation": {
+        "er": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "ir": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""},
+        "re": {"je": "", "tu": "", "il": "", "nous": "", "vous": "", "ils": ""}
+      }
     }
   }
 }

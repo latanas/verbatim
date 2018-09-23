@@ -1,6 +1,13 @@
 {
+  "être": {
+    "meaning": "to be",
+    "irregular-conjugation": {
+      "indicatif": {
+        "présent": {"je": "suis", "tu": "es", "il": "est", "nous": "sommes", "vous": "êtes", "ils": "sont"} }
+      }
+  },
   "parler": { "meaning": "to speak" },
   "marcher": { "meaning": "to walk" },
   "manger": { "meaning": "to eat" },
-  "partir": { "meaning": "to speak", "auxiliary": "être" }
+  "partir": { "meaning": "to speak", "irregular-auxiliary": "être" }
 }
