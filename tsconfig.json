@@ -4,7 +4,7 @@
     "module": "es6",
     "target": "es3",
     "allowJs": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "removeComments": false,
     "preserveConstEnums": true,
     "sourceMap": true

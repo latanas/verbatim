@@ -9,15 +9,11 @@
 import {Conjugation, ConjugationTenseMap, ConjugationAlgorithm} from './conjugation'
 
 export default class ConjugationAlgorithmGroupIII implements ConjugationAlgorithm {
-  public getVerbGroup(): number {
-    return 3;
-  }
-
   public getVerbDetector(): RegExp {
     return new RegExp("re$");
   }
 
-  public getVerbConjugation(infinitive: string): ConjugationTenseMap {
+  public conjugate( infinitive: string ): ConjugationTenseMap {
     let root = infinitive.replace( this.getVerbDetector(), "" );
     let tenses = new ConjugationTenseMap();
 

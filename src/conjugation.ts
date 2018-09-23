@@ -21,7 +21,6 @@ export class ConjugationTenseMap {
 }
 
 export interface ConjugationAlgorithm {
-  getVerbGroup(): number;
   getVerbDetector(): RegExp;
-  getVerbConjugation(infinitive: string): ConjugationTenseMap;
+  conjugate( infinitive: string ): ConjugationTenseMap;
 }

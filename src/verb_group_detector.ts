@@ -13,41 +13,56 @@ import ConjugationAlgorithmGroupII from './conjugation_algorithm_group_ii';
 import ConjugationAlgorithmGroupIII from './conjugation_algorithm_group_iii';
 
 export default class VerbGroupDetector {
+  private infinitive: string;
+  private group: number = 0;
   private algorithm: ConjugationAlgorithm = {
-    getVerbGroup: (): number => {
-      return 0;
-    },
     getVerbDetector: (): RegExp => {
       return new RegExp("");
     },
-    getVerbConjugation: ( infinitive: string ): ConjugationTenseMap => {
+    conjugate: ( infinitive: string ): ConjugationTenseMap => {
       return new ConjugationTenseMap();
     }
   };
+  private conjugation: ConjugationTenseMap;
 
   public constructor( infinitive: string ) {
     let detector: ConjugationAlgorithm = new ConjugationAlgorithmGroupI();
 
     if( infinitive.match(detector.getVerbDetector()) ) {
+      this.group = 1;
       this.algorithm = detector;
     }
     else {
       detector = new ConjugationAlgorithmGroupII();
 
       if( infinitive.match(detector.getVerbDetector()) ) {
+        this.group = 2;
         this.algorithm = detector;
       }
       else {
         detector = new ConjugationAlgorithmGroupIII();
 
         if( infinitive.match(detector.getVerbDetector()) ) {
+          this.group = 3;
           this.algorithm = detector;
         }
       }
     }
+
+    this.infinitive = infinitive;
+    this.conjugation = this.algorithm.conjugate( infinitive );
   }
 
-  public getGroupAlgorithm(): ConjugationAlgorithm {
-    return this.algorithm;
+  public getVerbGroup(): number {
+    return this.group;
   }
+
+  public getVerbInfinitive(): string {
+    return this.infinitive;
+  }
+
+  public getVerbConjugation(): ConjugationTenseMap {
+    return this.conjugation;
+  }
+
 }
